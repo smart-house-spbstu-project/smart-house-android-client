@@ -54,7 +54,7 @@ class DevicePageTest {
             }
         }
         page.activity = activity
-        assertEquals(activity.testtitle, page.activity.gettitle())
+        assertEquals(activity.testtitle, page.activity?.gettitle())
     }
 
     @Test

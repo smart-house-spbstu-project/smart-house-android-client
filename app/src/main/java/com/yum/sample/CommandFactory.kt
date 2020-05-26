@@ -36,7 +36,7 @@ class CommandFactory {
         Command() {
         override fun execute() {
             println("Pending id: $id, name: $title")
-            val url = (context as MainActivity).getServer()
+            val url = ((context ?: MainActivity()) as MainActivity).getServer()
             try {
                 val urlObj = URL(url)
                 val conn = urlObj.openConnection() as HttpURLConnection
