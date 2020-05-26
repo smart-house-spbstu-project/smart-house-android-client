@@ -55,7 +55,11 @@ class CommandFactory {
                 e.printStackTrace()
                 Thread.sleep(1000)
                 val toast =
-                    Toast.makeText(context, "Could not connect to server \n $url", Toast.LENGTH_SHORT)
+                    Toast.makeText(
+                        context,
+                        "Could not connect to server \n $url",
+                        Toast.LENGTH_SHORT
+                    )
                 toast.show()
             }
         }

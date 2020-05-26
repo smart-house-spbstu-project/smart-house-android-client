@@ -7,7 +7,6 @@ class ListRepository : ListDataProvider {
 
     val repository: HashMap<Int, List<Int>> = HashMap()
 
-
     init {
         repository[0] = listOf()
         repository[1] = listOf()
