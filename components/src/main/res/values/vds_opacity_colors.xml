@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Use this colors only if you cant use separate color and opacity (like in ripple)-->
+    <!--Opacities (use as prefix in colors)
+       cloudy = #0F
+       steamy = #1F
+       smoky  = #33
+       hazy   = #66
+       foggy  = #8F
+       deep   = #C2
+       dense  = #E0
+       -->
+
+    <color name="vds_gray_cloudy_highlight">#0F19252E</color>
+    <color name="vds_gray_steamy_highlight">#1F19252E</color>
+    <color name="vds_gray_smoky_highlight">#3319252E</color>
+    <color name="vds_gray_hazy_highlight">#6619252E</color>
+    <color name="vds_gray_foggy_highlight">#8F19252E</color>
+    <color name="vds_gray_deep_highlight">#C219252E</color>
+    <color name="vds_gray_dense_highlight">#E019252E</color>
+
+    <color name="vds_gray_cloudy_outline">#0F162129</color>
+    <color name="vds_gray_steamy_outline">#1F162129</color>
+    <color name="vds_gray_smoky_outline">#33162129</color>
+    <color name="vds_gray_hazy_outline">#66162129</color>
+    <color name="vds_gray_foggy_outline">#8F162129</color>
+    <color name="vds_gray_deep_outline">#C2162129</color>
+    <color name="vds_gray_dense_outline">#E0162129</color>
+</resources>

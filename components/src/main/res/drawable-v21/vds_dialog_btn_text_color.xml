@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) New Cloud Technologies, Ltd., 2013-2019
+  ~
+  ~ You can not use the contents of the file in any way without New Cloud Technologies, Ltd. written permission.
+  ~ To obtain such a permit, you should contact New Cloud Technologies, Ltd. at http://ncloudtech.com/contact.html
+  ~
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/vds_gray_outline" android:alpha="@dimen/vds_foggy_opacity" android:state_enabled="false" />
+    <item android:color="?colorPrimary" />
+</selector>

@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape android:shape="rectangle">
+        <stroke android:color="@drawable/vds_button_outline_color" android:width="@dimen/vds_viewer_divider_height"/>
+        <corners android:radius="@dimen/vds_padding_4"/>
+        <solid android:color="@drawable/vds_button_outline_background_color"/>
+    </shape>
+</item>
+</selector>

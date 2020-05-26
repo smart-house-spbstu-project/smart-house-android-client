@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) New Cloud Technologies, Ltd., 2013-2019
+  ~
+  ~ You can not use the contents of the file in any way without New Cloud Technologies, Ltd. written permission.
+  ~ To obtain such a permit, you should contact New Cloud Technologies, Ltd. at http://ncloudtech.com/contact.html
+  ~
+  -->
+
+<resources>
+    <!--Design system colors-->
+
+    <!--Common colors-->
+    <color name="vds_dark_jungle_green">#162129</color>
+    <color name="vds_tangerine">#0DF58D00</color>
+    <color name="vds_white_background">#73FFFFFF</color>
+    <color name="vds_white_full">#FFFFFF</color>
+    <color name="vds_transparent">#00000000</color>
+    <color name="vds_gray_outline">#162129</color>
+    <color name="vds_gray_highlight">#19252E</color>
+
+</resources>

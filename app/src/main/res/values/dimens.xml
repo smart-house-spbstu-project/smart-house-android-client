@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tile_width_portrait">158dp</dimen>
+    <dimen name="tile_height_portrait">141dp</dimen>
+    <dimen name="tile_width_landscape">195dp</dimen>
+    <dimen name="tile_height_landscape">115dp</dimen>
+    <dimen name="tile_margin">6dp</dimen>
+    <dimen name="page_margin">16dp</dimen>
+</resources>

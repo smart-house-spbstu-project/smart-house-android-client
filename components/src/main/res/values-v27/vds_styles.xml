@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="VDS.Splash.V27" parent="VDS.Splash.V19">
+        <item name="android:navigationBarColor">@color/vds_transparent</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:statusBarColor">@color/vds_transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="VDS.Splash" parent="VDS.Splash.V27"/>
+</resources>

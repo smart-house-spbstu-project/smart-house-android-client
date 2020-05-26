@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) New Cloud Technologies, Ltd., 2013-2019
+  ~
+  ~ You can not use the contents of the file in any way without New Cloud Technologies, Ltd. written permission.
+  ~ To obtain such a permit, you should contact New Cloud Technologies, Ltd. at http://yum.com/contact.html
+  ~
+  -->
+
+<resources>
+    <color name="primary">#4caf50</color>
+    <color name="primary_dark">#087F23</color>
+    <color name="accent">#80e27e</color>
+
+
+    <!--    Documents-->
+    <color name="main_color_word">#df78ef</color>
+    <color name="primary_color">#ab47bc</color>
+    <color name="primary_dark_color">#790e8b</color>
+
+    <color name="grey_outline_cloudy">#1F162129</color>
+    <color name="grey_highlight_cloudy">#0F19252E</color>
+</resources>

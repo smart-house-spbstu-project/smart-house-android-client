@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) New Cloud Technologies, Ltd., 2013-2019
+  ~
+  ~ You can not use the contents of the file in any way without New Cloud Technologies, Ltd. written permission.
+  ~ To obtain such a permit, you should contact New Cloud Technologies, Ltd. at http://ncloudtech.com/contact.html
+  ~
+  -->
+
+<resources>
+    <dimen name="vds_cloudy_opacity" format="float">0.06</dimen>
+    <dimen name="vds_steamy_opacity" format="float">0.12</dimen>
+    <dimen name="vds_smoky_opacity" format="float">0.24</dimen>
+    <dimen name="vds_hazy_opacity" format="float">0.44</dimen>
+    <dimen name="vds_foggy_opacity" format="float">0.56</dimen>
+    <dimen name="vds_deep_opacity" format="float">0.76</dimen>
+    <dimen name="vds_dense_opacity" format="float">0.88</dimen>
+</resources>

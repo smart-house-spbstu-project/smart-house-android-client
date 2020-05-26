@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MenuButton">
+        <attr name="text" format="string" />
+        <attr name="image" format="reference" />
+        <attr name="active" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorButton">
+        <attr name="colorName" format="string" />
+        <attr name="iconColor" format="color" />
+        <attr name="hexNumber" format="string" />
+        <attr name="fillBackground" format="boolean" />
+        <attr name="touchable" format="boolean" />
+        <attr name="targetTheme" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="OpacityDescription">
+        <attr name="alpha" format="float" />
+        <attr name="alpha_name" format="string" />
+    </declare-styleable>
+
+</resources>

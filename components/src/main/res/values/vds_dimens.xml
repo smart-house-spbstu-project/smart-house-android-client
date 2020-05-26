@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) New Cloud Technologies, Ltd., 2013-2019
+  ~
+  ~ You can not use the contents of the file in any way without New Cloud Technologies, Ltd. written permission.
+  ~ To obtain such a permit, you should contact New Cloud Technologies, Ltd. at http://ncloudtech.com/contact.html
+  ~
+  -->
+
+<resources>
+    <!--Design system dimens-->
+    <!--Font Sizes-->
+    <dimen name="vds_subtext">12sp</dimen>
+    <dimen name="vds_text_16">16sp</dimen>
+
+    <dimen name="vds_corpus">11sp</dimen>
+    <dimen name="vds_cicero">12sp</dimen>
+    <dimen name="vds_mittel">14sp</dimen>
+    <dimen name="vds_tertia">16sp</dimen>
+    <dimen name="vds_double_corpus">20sp</dimen>
+    <dimen name="vds_double_cicero">24sp</dimen>
+    <dimen name="vds_double_tertia">34sp</dimen>
+
+
+    <!--Elevation-->
+    <dimen name="vds_elevation_2">2dp</dimen>
+    <dimen name="vds_elevation_4">4dp</dimen>
+    <dimen name="vds_elevation_6">6dp</dimen>
+    <dimen name="vds_elevation_8">8dp</dimen>
+    <dimen name="vds_elevation_12">12dp</dimen>
+    <dimen name="vds_elevation_16">16dp</dimen>
+    <dimen name="vds_elevation_24">24dp</dimen>
+
+    <!--Margins-->
+
+    <dimen name="vds_margin_2">2dp</dimen>
+    <dimen name="vds_margin_5">5dp</dimen>
+    <dimen name="vds_margin_8">8dp</dimen>
+    <dimen name="vds_margin_12">12dp</dimen>
+    <dimen name="vds_margin_14">14dp</dimen>
+    <dimen name="vds_margin_16">16dp</dimen>
+    <dimen name="vds_margin_20">20dp</dimen>
+    <dimen name="vds_margin_24">24dp</dimen>
+    <dimen name="vds_margin_28">28dp</dimen>
+    <dimen name="vds_margin_32">32dp</dimen>
+
+    <!--Paddings-->
+    <dimen name="vds_padding_1">1dp</dimen>
+    <dimen name="vds_padding_5">5dp</dimen>
+    <dimen name="vds_padding_4">4dp</dimen>
+    <dimen name="vds_padding_10">10dp</dimen>
+    <dimen name="vds_padding_12">12dp</dimen>
+    <dimen name="vds_padding_16">16dp</dimen>
+    <dimen name="vds_padding_18">18dp</dimen>
+
+    <!--View dimens-->
+    <dimen name="vds_list_item_height">48dp</dimen>
+    <dimen name="vds_switch_width">36dp</dimen>
+    <dimen name="vds_default_button_height">36dp</dimen>
+    <dimen name="vds_default_button_height_v19">48dp</dimen>
+    <dimen name="vds_banner_icon_width">60dp</dimen>
+    <dimen name="vds_banner_close_button_widht">24dp</dimen>
+    <dimen name="vds_banner_button_min_width">160dp</dimen>
+    <dimen name="vds_line_height_1">24dp</dimen>
+    <dimen name="vds_line_height_2">20dp</dimen>
+    <dimen name="vds_viewer_divider_height">1dp</dimen>
+
+    <!--Radius-->
+    <dimen name="vds_rounding_small">2dp</dimen>
+    <dimen name="vds_rounding_medium">4dp</dimen>
+    <dimen name="vds_rounding_large">8dp</dimen>
+    <dimen name="vds_rounding_big">14dp</dimen>
+
+    <!--use by default for now-->
+    <item name="vds_letter_spacing_1" type="dimen" format="float">0.0</item>
+    <item name="vds_letter_spacing_2" type="dimen" format="float">0.0</item>
+
+    <dimen name="vds_alert_dialog_text_linespacing">6dp</dimen>
+
+</resources>

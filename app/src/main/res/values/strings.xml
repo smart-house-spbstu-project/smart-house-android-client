@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Home IoT</string>
+    <string name="title">Home IoT System</string>
+    <string name="variables_button">Lamp</string>
+    <string name="text_styles_button">Door</string>
+    <string name="colors_button">Window</string>
+    <string name="components_button">Fire Alarm</string>
+    <string name="modules_button">Firefighting</string>
+    <string name="templates_button">Others</string>
+
+
+    <string name="rgb_lamp">RGB Lamp</string>
+    <string name="boiler">Boiler</string>
+</resources>

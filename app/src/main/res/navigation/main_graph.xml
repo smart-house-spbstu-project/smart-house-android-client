@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    android:label="  "
+    app:startDestination="@id/mainMenu">
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.yum.sample.fragments.MainMenu"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenu_to_fragmentList"
+            app:destination="@+id/fragmentList"
+            app:enterAnim="@anim/fade_in"
+            app:popEnterAnim="@anim/fade_in">
+            <argument
+                android:name="button_id"
+                android:defaultValue="0" />
+        </action>
+        <action
+            android:id="@+id/action_mainMenu_to_pageFragment"
+            app:destination="@id/pageFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/splashScreen"
+        android:name="com.yum.sample.SplashActivity"
+        android:label="SplashScreen" />
+    <fragment
+        android:id="@+id/fragmentList"
+        android:name="com.yum.sample.fragments.ListPage"
+        android:label="FragmentList"
+        tools:layout="@layout/fragment_list" >
+        <argument
+            android:name="button_id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_fragmentList_to_splashScreen"
+            app:destination="@id/splashScreen" />
+        <action
+            android:id="@+id/action_fragmentList_to_pageFragment"
+            app:destination="@id/pageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageFragment"
+        android:name="com.yum.sample.fragments.DevicePage"
+        android:label="PageFragment" />
+</navigation>

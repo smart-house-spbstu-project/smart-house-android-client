@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="@android:color/white"
+    tools:context=".fragments.MainMenu">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vds_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textSize="16sp"
+        android:textColor="@android:color/secondary_text_light"
+        app:layout_constraintBottom_toTopOf="@id/middle_guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_guideline"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <View
+        android:id="@+id/middle_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/groupButtons"
+        app:layout_constraintHeight_percent="0.10"
+        app:layout_constraintTop_toBottomOf="@id/vds_title"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/groupButtons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middle_guideline"
+        app:layout_constraintWidth_max="620dp">
+
+        <com.yum.sample.components.MenuButton
+            android:id="@+id/variables"
+            style="@style/Button.Outline.Card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/tile_margin"
+            android:layout_marginBottom="@dimen/tile_margin"
+            app:active="true"
+            app:layout_constraintBottom_toTopOf="@id/components"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/textStyles"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:text="@string/variables_button" />
+
+        <com.yum.sample.components.MenuButton
+            android:id="@+id/textStyles"
+            style="@style/Button.Outline.Card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/tile_margin"
+            android:layout_marginEnd="@dimen/tile_margin"
+            android:layout_marginBottom="@dimen/tile_margin"
+            app:active="true"
+            app:layout_constraintBottom_toTopOf="@id/modules"
+            app:layout_constraintLeft_toRightOf="@id/variables"
+            app:layout_constraintRight_toLeftOf="@id/colors"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:text="@string/text_styles_button" />
+
+        <com.yum.sample.components.MenuButton
+            android:id="@+id/colors"
+            style="@style/Button.Outline.Card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/tile_margin"
+            android:layout_marginBottom="@dimen/tile_margin"
+            app:active="true"
+            app:layout_constraintBottom_toTopOf="@id/templates"
+            app:layout_constraintLeft_toRightOf="@id/textStyles"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:text="@string/colors_button" />
+
+        <com.yum.sample.components.MenuButton
+            android:id="@+id/components"
+            style="@style/Button.Outline.Card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/tile_margin"
+            android:layout_marginEnd="@dimen/tile_margin"
+            app:active="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/modules"
+            app:layout_constraintTop_toBottomOf="@id/variables"
+
+            app:text="@string/components_button" />
+
+        <com.yum.sample.components.MenuButton
+            android:id="@+id/modules"
+            style="@style/Button.Outline.Card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/tile_margin"
+            android:layout_marginTop="@dimen/tile_margin"
+            android:layout_marginEnd="@dimen/tile_margin"
+            app:active="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/components"
+            app:layout_constraintRight_toLeftOf="@id/templates"
+            app:layout_constraintTop_toBottomOf="@id/textStyles"
+
+            app:text="@string/modules_button" />
+
+        <com.yum.sample.components.MenuButton
+            android:id="@+id/templates"
+            style="@style/Button.Outline.Card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/tile_margin"
+            android:layout_marginTop="@dimen/tile_margin"
+            app:active="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/modules"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/colors"
+
+            app:text="@string/templates_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
