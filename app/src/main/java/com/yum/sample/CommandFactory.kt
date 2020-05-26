@@ -35,35 +35,36 @@ class CommandFactory {
     class TurnCommand(var id: Int, var title: String, var context: Context?, var boo: Boolean) :
         Command() {
         override fun execute() {
-            println("Pending id: $id, name: $title")
-            val url = ((context ?: MainActivity()) as MainActivity).getServer()
-            try {
-                val urlObj = URL(url)
-                val conn = urlObj.openConnection() as HttpURLConnection
-                conn.doOutput = true
-                conn.requestMethod = "POST"
-                conn.setRequestProperty("Accept-Charset", "UTF-8")
-                conn.readTimeout = 10000
-                conn.connectTimeout = 15000
-                conn.connect()
-                val paramsString = title + " " + if (boo) "ON" else "OFF"
-                val wr = DataOutputStream(conn.outputStream)
-                wr.writeBytes(paramsString)
-                wr.flush()
-                wr.close()
-            } catch (e: IOException) {
-                e.printStackTrace()
-                Thread.sleep(1000)
-                val toast =
-                    Toast.makeText(
-                        context,
-                        "Could not connect to server \n $url",
-                        Toast.LENGTH_SHORT
-                    )
-                toast.show()
+            if (context != null) {
+                println("Pending id: $id, name: $title")
+                val url = (context as MainActivity).getServer()
+                try {
+                    val urlObj = URL(url)
+                    val conn = urlObj.openConnection() as HttpURLConnection
+                    conn.doOutput = true
+                    conn.requestMethod = "POST"
+                    conn.setRequestProperty("Accept-Charset", "UTF-8")
+                    conn.readTimeout = 10000
+                    conn.connectTimeout = 15000
+                    conn.connect()
+                    val paramsString = title + " " + if (boo) "ON" else "OFF"
+                    val wr = DataOutputStream(conn.outputStream)
+                    wr.writeBytes(paramsString)
+                    wr.flush()
+                    wr.close()
+                } catch (e: IOException) {
+                    e.printStackTrace()
+                    Thread.sleep(1000)
+                    val toast =
+                        Toast.makeText(
+                            context,
+                            "Could not connect to server \n $url",
+                            Toast.LENGTH_SHORT
+                        )
+                    toast.show()
+                }
             }
         }
-
     }
 
 }
