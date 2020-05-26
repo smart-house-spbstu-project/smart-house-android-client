@@ -10,7 +10,7 @@ import java.net.Socket
 class SplashActivity : AppCompatActivity() {
 
     init {
-        if (!isOnline()) {
+        if (isOnline()) {
             val toast = Toast.makeText(applicationContext, "Could not connect to server", Toast.LENGTH_SHORT)
             toast.show()
         }

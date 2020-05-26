@@ -13,16 +13,19 @@ import com.yum.sample.R
 
 
 class MenuButton @JvmOverloads constructor(
-    context: Context,
+    context: Context?,
     attrs: AttributeSet?,
     defStyleAttr: Int = 0
 ) : ConstraintLayout(context, attrs, defStyleAttr) {
     var model: MenuItem? = null
 
     init {
-        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        inflater.inflate(R.layout.menu_button, this, true)
-        attrs?.setAttrs()
+        if(context != null) {
+            val inflater =
+                context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            inflater.inflate(R.layout.menu_button, this, true)
+            attrs?.setAttrs()
+        }
     }
 
     private fun AttributeSet.setAttrs() {
@@ -41,11 +44,13 @@ class MenuButton @JvmOverloads constructor(
 
     fun bind(value: MenuItem){
         model = value
-        button_text.text = context.getString(value.title)
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT)
-            imageView.setBackgroundResource(value.content)
-        else
-            imageView.setImageDrawable(ContextCompat.getDrawable(context, value.content))
+        if(context != null) {
+            button_text.text = context.getString(value.title)
+            if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT)
+                imageView.setBackgroundResource(value.content)
+            else
+                imageView.setImageDrawable(ContextCompat.getDrawable(context, value.content))
+        }
     }
 
     override fun setEnabled(enabled: Boolean) {

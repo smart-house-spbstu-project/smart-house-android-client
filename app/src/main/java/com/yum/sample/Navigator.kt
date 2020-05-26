@@ -3,7 +3,7 @@ package com.yum.sample
 import android.os.Bundle
 import androidx.navigation.NavController
 
-class Navigator(val navController: NavController) : Router {
+class Navigator(val navController: NavController?) : Router {
 
     val destinations: HashMap<Int, Int> = HashMap()
     val layouts: HashMap<Int, Int> = HashMap()
@@ -26,7 +26,7 @@ class Navigator(val navController: NavController) : Router {
 
     override fun route(labelID: Int) {
         if (destinations[labelID] != null)
-            navController.navigate(
+            navController?.navigate(
                 destinations[labelID] ?: R.id.action_fragmentList_to_pageFragment
             )
     }
@@ -38,7 +38,7 @@ class Navigator(val navController: NavController) : Router {
                 args.putInt("button_id", layouts[idArg] ?: 0)
             else
                 args.putInt("button_id", idArg)
-            navController.navigate(
+            navController?.navigate(
                 destinations[labelID] ?: R.id.action_fragmentList_to_pageFragment, args
             )
         }
