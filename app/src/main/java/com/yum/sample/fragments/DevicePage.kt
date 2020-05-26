@@ -19,7 +19,7 @@ import com.yum.sample.CommandFactory
 
 class DevicePage : Fragment() {
 
-    lateinit var activity: CustomActivity
+    var activity: CustomActivity? = null
     var layoutId: Int = 0
 
     override fun onCreateView(
@@ -28,7 +28,7 @@ class DevicePage : Fragment() {
     ): View? {
         layoutId = arguments?.get("button_id") as Int
         activity = context as CustomActivity
-        activity.setTitle(layoutId)
+        activity?.setTitle(layoutId)
 
         enterTransition = ChangeBounds()
         exitTransition = ChangeBounds()
@@ -45,8 +45,8 @@ class DevicePage : Fragment() {
 
     fun setButtons(layoutId: Int) {
         if (layoutId in 1..2) {
-            enable.text = "Open"
-            disable.text = "Close"
+            enable?.text = "Open"
+            disable?.text = "Close"
         }
     }
 
@@ -56,7 +56,7 @@ class DevicePage : Fragment() {
             command.boo = boo
             command.context = context
             command.id = id
-            command.title = activity.gettitle()
+            command.title = activity?.gettitle()?: ""
         }
         command.execute()
     }
